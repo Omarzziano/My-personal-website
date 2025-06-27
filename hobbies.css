@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b7b0fd;
+  font-family: "Bree Serif", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.hobbies-section {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #928ae2;
+}
+
+.hobbies-title {
+  font-family: "Lilita One", cursive;
+  font-size: 48px;
+  text-align: center;
+  color: #0B1D51;
+  margin-bottom: 10px;
+}
+
+.hobbies-subtitle {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.hobbies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.hobby-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.hobby-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.hobby-card ul {
+  padding-left: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  background-color: #0B1D51;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Lilita One", cursive;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0B1D51;
+  color: white;
+  font-family: "Lilita One", cursive;
+}
+
+
+@media (max-width: 480px) {
+  .hobbies-title {
+    font-size: 28px;
+  }
+
+  .hobbies-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  main.hobbies-section {
+    padding: 20px;
+  }
+
+  .hobbies-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .hobby-card {
+    padding: 15px;
+  }
+
+  .back-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .hobbies-title {
+    font-size: 36px;
+  }
+
+  .hobbies-subtitle {
+    font-size: 22px;
+  }
+
+  main.hobbies-section {
+    padding: 30px;
+  }
+
+  .hobbies-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+  }
+
+  .hobby-card {
+    padding: 18px;
+  }
+
+  .back-button {
+    padding: 9px 18px;
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .hobbies-title {
+    font-size: 48px;
+  }
+
+  .hobbies-subtitle {
+    font-size: 28px;
+  }
+
+  main.hobbies-section {
+    padding: 40px;
+  }
+
+  .hobbies-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .hobby-card {
+    padding: 20px;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .footer {
+    font-size: 18px;
+    padding: 20px;
+  }
+}

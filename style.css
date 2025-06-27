@@ -1,0 +1,356 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #b7b0fd;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+#Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/Fondo.png");
+  background-size:cover;
+  background-repeat:repeat;
+  background-position: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.alien {
+margin: 90px 0px;  
+}
+
+.intro {
+  font-family: lilita one;
+  font-size: 90px;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: normal;
+  color: #0B1D51;
+  margin: 10px 0px;
+  position:relative;
+
+}
+
+.description {
+  font-family: lilita one;
+    font-size: 40px;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+      font-style: normal;
+      color: #928ae2;
+      margin: 0 0 10px 0;
+}
+
+#resume {
+  display:flex;
+  flex-direction: column;
+  background-color: #928ae2;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  text-align: center;
+  align-items:center;
+  margin-top:0;
+}
+
+.profilep {
+  border-radius: 50%;
+  margin: 50px 0px;
+}
+
+.dream {
+  font-family: lilita one;
+    font-size: 40px;
+    text-align: justify;
+    margin: 3px 100px;
+    color: #0B1D51;
+}
+
+
+.Columnitas {
+  display: flex ;
+    flex-direction: row;
+    gap: 30px;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3%;
+    color: #0B1D51;
+
+}
+
+.Columnitas ul {
+  text-align:justify;
+  padding-left: 20px;
+  margin: 10px 0px;
+}
+
+.education,
+.work,
+.skills {
+  flex: 1;
+}
+
+.education {
+  margin-top: 20px;
+  font-family:"Bree Serif", serif;
+      
+  padding: 20px;
+}
+
+.work {
+  margin-top: 20px;
+  font-family: "Bree Serif", serif;
+  padding: 20px;
+}
+
+.skills {
+  margin-top: 20px;
+  font-family: "Bree Serif", serif;
+  padding: 20px;
+}
+
+.proyectos h1 {
+  text-align: center;
+  font-family: lilita one;
+  font-weight: 120;
+  font-size: 35px;
+}
+
+#projects h2 {
+  margin: 5px;
+}
+
+.proyectos {
+  background-color: hwb(295 57% 12% / 0.692);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #0B1D51;
+}
+
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 20px;
+  font-family: "Bree Serif", serif;
+  font-size: 20px;
+}
+
+#projects>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hwb(295 57% 12% / 0.692);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  /* hace que cada tarjeta se estire verticalmente */
+  box-sizing: border-box;
+}
+
+#projects div img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #0B1D51;
+}
+
+footer div {
+  margin: 16px;
+}
+
+.footerProj {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 0px;
+  font-family: lilita one ;
+  font-weight:50;
+  height: 40px;
+}
+
+@media (max-width: 480px) {
+  .intro {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+
+  .dream {
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .profilep,
+  .alien {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+  }
+
+  .Columnitas {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  #projects div img {
+    max-height: 150px;
+  }
+
+  .proyectos h1 {
+    font-size: 25px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .intro {
+    font-size: 70px;
+  }
+
+  .description {
+    font-size: 30px;
+  }
+
+  .dream {
+    font-size: 22px;
+    margin: 20px;
+  }
+
+  .profilep,
+  .alien {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Columnitas {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #projects div img {
+    max-height: 200px;
+  }
+
+  .proyectos h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .intro {
+    font-size: 80px;
+  }
+
+  .description {
+    font-size: 35px;
+  }
+
+  .dream {
+    font-size: 30px;
+    margin: 50px 100px;
+  }
+
+  .profilep,
+  .alien {
+    width: 200px;
+    height: 200px;
+  }
+
+  .Columnitas {
+    flex-direction: row;
+  }
+
+  #projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #projects div img {
+    max-height: 250px;
+  }
+
+  .proyectos h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1601px) {
+  .intro {
+    font-size: 90px;
+  }
+
+  .description {
+    font-size: 40px;
+  }
+
+  .dream {
+    font-size: 35px;
+    margin: 50px 150px;
+  }
+
+  .profilep,
+  .alien {
+    width: 200px;
+    height: 200px;
+  }
+
+  .Columnitas {
+    flex-direction: row;
+  }
+
+  #projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .proyectos h1 {
+    font-size: 40px;
+  }}
+  
