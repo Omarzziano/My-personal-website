@@ -187,6 +187,7 @@ margin: 90px 0px;
 footer {
   text-align: center;
   color: #0B1D51;
+  font-size: 18px;
 }
 
 footer div {
@@ -243,7 +244,7 @@ footer div {
   }
 
   footer {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
